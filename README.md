@@ -2,7 +2,7 @@
 
 Type `yak` and get to work; You'll see a Notification Center reminder pop up in 20 minutes, reminding you to stretch, breathe deeply and get back to work.
 
-![Yak workflow](yak-saver.png)
+![Yak workflow](/Resources/yak-saver.png?raw=true)
 
 Why the keyword `yak`? The expression "yak shaving" refers to being busy without necessarily being productive. The aim of this timer is to help you remember, every 20 minutes, to stay focused and on-task.
 
@@ -22,5 +22,3 @@ For quick reference:
 You can also customise the keyword if `yak` doesn't quite do it for you.
 
 Good luck and have a productive day!
-
-*Vero*
