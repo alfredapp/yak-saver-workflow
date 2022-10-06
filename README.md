@@ -22,3 +22,12 @@ For quick reference:
 You can also customise the keyword if `yak` doesn't quite do it for you.
 
 Good luck and have a productive day!
+
+## Download
+
+[Get the latest release.](https://github.com/alfredapp/yak-saver/releases/latest/download/Yak.Saver.alfredworkflow)
+
+## License
+
+3-Clause BSD
+
