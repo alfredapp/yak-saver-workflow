@@ -1,4 +1,10 @@
-# Yak Saver: Time to Focus
+# <img src='Workflows/icon.png' width='45' align='center' alt='icon'> Yak Saver: Time to Focus
+
+Set a reminder to get focused for a set amount of time
+
+[⤓ Install From the Alfred Gallery](https://alfred.app/workflows/alfredapp/yak-saver/)
+
+## Usage
 
 Type `yak` and get to work; You'll see a Notification Center reminder pop up in 20 minutes, reminding you to stretch, breathe deeply and get back to work.
 
@@ -22,12 +28,3 @@ For quick reference:
 You can also customise the keyword if `yak` doesn't quite do it for you.
 
 Good luck and have a productive day!
-
-## Download
-
-[Get the latest release.](https://github.com/alfredapp/yak-saver/releases/latest/download/Yak.Saver.alfredworkflow)
-
-## License
-
-3-Clause BSD
-
