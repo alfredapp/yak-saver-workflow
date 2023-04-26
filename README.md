@@ -1,4 +1,4 @@
-# <img src='Workflows/icon.png' width='45' align='center' alt='icon'> Yak Saver: Time to Focus
+# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> Yak Saver: Time to Focus
 
 Set a reminder to get focused for a set amount of time
 
@@ -8,7 +8,7 @@ Set a reminder to get focused for a set amount of time
 
 Type `yak` and get to work; You'll see a Notification Center reminder pop up in 20 minutes, reminding you to stretch, breathe deeply and get back to work.
 
-![Yak workflow](/Workflows/yak-saver.png?raw=true)
+![Yak workflow](/Workflow/yak-saver.png?raw=true)
 
 Why the keyword `yak`? The expression "yak shaving" refers to being busy without necessarily being productive. The aim of this timer is to help you remember, every 20 minutes, to stay focused and on-task.
 

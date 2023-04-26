@@ -8,6 +8,19 @@
 	<string>Examples</string>
 	<key>connections</key>
 	<dict>
+		<key>195565E3-4236-4C75-A9F6-39F125604331</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5DC111DE-4E8E-4979-9F43-BE18DA078156</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5DC111DE-4E8E-4979-9F43-BE18DA078156</key>
 		<array>
 			<dict>
@@ -25,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5DC111DE-4E8E-4979-9F43-BE18DA078156</string>
+				<string>195565E3-4236-4C75-A9F6-39F125604331</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,27 +58,6 @@
 	<string>Yak Saver</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>subtext</key>
-				<string>Let's start working on that task!</string>
-				<key>text</key>
-				<string>Start my focus timer</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>62D4AAD1-4B63-4089-9185-4B32356911BB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -90,8 +82,42 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>subtext</key>
+				<string>Let's start working on that task!</string>
+				<key>text</key>
+				<string>Start my focus timer</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>62D4AAD1-4B63-4089-9185-4B32356911BB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>expression</key>
+				<string>{var:minutes} * 60</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.expression</string>
+			<key>uid</key>
+			<string>195565E3-4236-4C75-A9F6-39F125604331</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>seconds</key>
-				<string>{var:time}</string>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.delay</string>
@@ -130,10 +156,21 @@ Good luck and have a productive day!
 *[Photo Credit: Tommy Dickson]*</string>
 	<key>uidata</key>
 	<dict>
+		<key>195565E3-4236-4C75-A9F6-39F125604331</key>
+		<dict>
+			<key>note</key>
+			<string>Convert minutes to seconds</string>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
 		<key>5DC111DE-4E8E-4979-9F43-BE18DA078156</key>
 		<dict>
+			<key>note</key>
+			<string>Wait number of seconds</string>
 			<key>xpos</key>
-			<real>240</real>
+			<real>370</real>
 			<key>ypos</key>
 			<real>80</real>
 		</dict>
@@ -147,7 +184,7 @@ Good luck and have a productive day!
 		<key>8E5755C5-090A-41AF-9254-9701CAA59DAB</key>
 		<dict>
 			<key>xpos</key>
-			<real>350</real>
+			<real>475</real>
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
@@ -160,9 +197,9 @@ Good luck and have a productive day!
 				<key>default</key>
 				<string>yak</string>
 				<key>placeholder</key>
-				<string>yak</string>
+				<string></string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 			</dict>
@@ -179,22 +216,22 @@ Good luck and have a productive day!
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>1200</string>
+				<string>20</string>
 				<key>placeholder</key>
-				<string>1200</string>
+				<string></string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The duration for each focus period you'd like to set (default is 1200 seconds or 20 minutes)</string>
+			<string>The duration for each focus period you'd like to set</string>
 			<key>label</key>
-			<string>Time in Seconds</string>
+			<string>Time in Minutes</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>time</string>
+			<string>minutes</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -202,7 +239,7 @@ Good luck and have a productive day!
 				<key>default</key>
 				<string>You're awesome, keep going!</string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 				<key>verticalsize</key>
@@ -218,8 +255,10 @@ Good luck and have a productive day!
 			<string>words</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2022.2</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://www.alfredapp.com</string>
 </dict>
