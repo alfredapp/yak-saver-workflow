@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.alfredapp.vero.yakshaver</string>
-	<key>category</key>
-	<string>Examples</string>
 	<key>connections</key>
 	<dict>
 		<key>195565E3-4236-4C75-A9F6-39F125604331</key>
@@ -68,7 +66,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Stretch, take a deep breath, then start again!</string>
+				<string>{var:encouragement}</string>
 				<key>title</key>
 				<string>Are you still focused?</string>
 			</dict>
@@ -128,28 +126,13 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># Yak Saver: Time to Focus
+	<string>## Usage
 
-Type `yak` and get to work; You'll see a Notification Center reminder pop up in 20 minutes, reminding you to stretch, breathe deeply and get back to work.
+Start a timer via the `yak` keyword. You'll see a notification with words of encouragement pop up after 20 minutes, reminding you to stretch, breathe deeply, and get back to work. Change the time and messaging in the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/)
 
 ![Yak workflow](yak-saver.png)
 
-Why the keyword `yak`? The expression "yak shaving" refers to being busy without necessarily being productive. The aim of this timer is to help you remember, every 20 minutes, to stay focused and on-task.
-
-Like a pomodoro timer, with less tomatoes and more yaks.
-
-### Time duration
-
-By default, the workflow is set to remind you every 20 minutes, but you can change this timing in the User Configuration. Note that the time is set in seconds.
-
-For quick reference:
-- 10 mins: 600 seconds
-- 20 mins: 1200 seconds
-- 30 mins: 1800 seconds
-
-### Keyword
-
-You can also customise the keyword if `yak` doesn't quite do it for you.
+Why the keyword `yak`? The expression "yak shaving" refers to being busy without necessarily being productive. The aim of this timer is to help you remember, every 20 minutes, to stay focused and on-task. Like a pomodoro timer, with less tomatoes and more yaks.
 
 Good luck and have a productive day!
 
@@ -206,7 +189,7 @@ Good luck and have a productive day!
 			<key>description</key>
 			<string>Set your own keyword if "yak" isn't the keyword for you. :)</string>
 			<key>label</key>
-			<string>Workflow keyword</string>
+			<string>Timer Keyword</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
@@ -215,21 +198,25 @@ Good luck and have a productive day!
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>default</key>
-				<string>20</string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
+				<key>defaultvalue</key>
+				<integer>20</integer>
+				<key>markercount</key>
+				<integer>24</integer>
+				<key>maxvalue</key>
+				<integer>240</integer>
+				<key>minvalue</key>
+				<integer>10</integer>
+				<key>onlystoponmarkers</key>
 				<false/>
-				<key>trim</key>
+				<key>showmarkers</key>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The duration for each focus period you'd like to set</string>
+			<string>The duration for each focus period.</string>
 			<key>label</key>
 			<string>Time in Minutes</string>
 			<key>type</key>
-			<string>textfield</string>
+			<string>slider</string>
 			<key>variable</key>
 			<string>minutes</string>
 		</dict>
@@ -237,7 +224,7 @@ Good luck and have a productive day!
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>You're awesome, keep going!</string>
+				<string>Stretch, take a deep breath, then start again!</string>
 				<key>required</key>
 				<false/>
 				<key>trim</key>
@@ -252,13 +239,13 @@ Good luck and have a productive day!
 			<key>type</key>
 			<string>textarea</string>
 			<key>variable</key>
-			<string>words</string>
+			<string>encouragement</string>
 		</dict>
 	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2023.2</string>
+	<string>2025.1</string>
 	<key>webaddress</key>
 	<string>https://www.alfredapp.com</string>
 </dict>
